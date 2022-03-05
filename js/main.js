@@ -4,7 +4,7 @@ let searchIcon = document.querySelector("#search-icon");
 
 
 let city = "Tehran";
-let key = "0962dc1fc48ff43b087025aa1e35e11b";
+let key = "";
 let unit = "metric"
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=${unit}`;
 
@@ -200,7 +200,7 @@ function showTemperature(response) {
 }
 
 function setApi(position) {
-    let keyApi = "0962dc1fc48ff43b087025aa1e35e11b";
+    let keyApi = "";
     let apiurl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${keyApi}&units=metric`;
 
     axios.get(apiurl).then(showTemperature);
