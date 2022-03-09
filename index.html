@@ -5,61 +5,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/style.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="/src/style.css">
     <title>Document</title>
-    <script src="https://kit.fontawesome.com/24df624ac5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="container1">
-        <form>
-            <input type="text" placeholder="input your city" id="search-text" class="search shadow  bg-body rounded">
-            <i id="search-icon" class="fa-solid fa-magnifying-glass search-icon"></i>
-
-            <!-- <input type="submit" value="search" id="search-icon"> -->
-        </form>
-        <div class="city">
-            <h1 id="heahing-city"> Tehran</h1>
-
-            <h2><span id="dg"></span> <a href="#" id="c">°C</a>|<a href="#" id="f">°F</a></h2>
-            <div id="today"></div>
-            <input type="button" value="Current" class="city-img btn2" id="current">
-            <!-- <button type="submit" class="city-img btn2" id="current">Current</button> -->
-            <div class="city-img" id="status"></div>
-            <div class="city-img" id="windspeed"></div>
-            <div class="city-img" id="Humidity"></div>
-
-        </div>
+    <div class="container">
+        <div class="weather-app-wrapper">
+            <div class="weather-app">
+                <form action="" id="search-form" class="mb-3">
+                    <div class="row">
+                        <div class="col-9">
+                            <input type="search" name="" id="city-input" placeholder="type a city..." class="form-control" autocomplete="off">
+                        </div>
+                        <div class="col-3">
+                            <input type="submit" value="search" class="btn btn-primary w-100">
+                        </div>
+                    </div>
 
 
-        <div>
-            <select class="form-select  form" aria-label=".form-select-sm example">
-            
-                <option value="1">Yesterday</option>
-                <option value="2" selected>Today</option>
-                <option value="3">Tomarrow</option>
-            </select>
-        </div>
-        <p>The weather of the next two hours:</p>
+                </form>
 
-        <div class="container2">
-            <div class="row-4">
-                <img src="/img/10520105221548329944-128.png" class="card-img-top img1" alt="...">
-                <img src="/img/10573724551548329942-128.png" class="card-img-top img1" alt="...">
-                <img src="/img/4845584041548329956-128.png" class="card-img-top img1" alt="...">
-                <img src="/img/6534293091548329951-128.png" class="card-img-top img1" alt="...">
+
+
+
+                <div class="overview">
+                    <h1 id="city"></h1>
+                    <ul>
+                        <li>Last updated at <span id="data"></span></li>
+                        <li id="description"></li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="clear-fix weather-tempreture">
+                            <img id="icon" src="" alt="" class="float-left">
+                            <div class="float-left">
+                                <strong id="temprature"></strong>
+                                <span class="units"><a href="" id="cels-link" class="active">°C</a>  |<a href="#" id="farenheit" >°F</a></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-6">
+                        <ul>
+
+                            <li id="Humidity"></li>
+                            <li id="wind"></li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
-        </div>
-
-        <div class="container3 ">
-            <img src="/img/images.jpg" class=" img " alt=" ">
-
-
-
+            <small>
+              <a href="https://github.com/sanafathi30/VanillaWeatherApp" target="_blank">open source code  </a>, by sana fathi
+             </small>
         </div>
     </div>
+
+
     <script src="/js/main.js"></script>
 </body>
 
