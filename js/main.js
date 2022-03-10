@@ -124,34 +124,6 @@ function search(city) {
 
 //
 
-//
-
-function showFarenheitTemptature(event) {
-    event.preventDefault();
-
-    let farenheitelement = document.querySelector("#temprature");
-    c.classList.remove("active");
-    f.classList.add("active");
-    farenheitelement.innerHTML = Math.round((cels * 9) / 5 + 32);
-}
-
-function showCelsTemprature(event) {
-    event.preventDefault();
-    f.classList.remove("active");
-    c.classList.add("active");
-    let celselement = document.querySelector("#temprature");
-    celselement.innerHTML = Math.round(cels);
-}
-
-let f = document.querySelector("#farenheit");
-f.addEventListener("click", showFarenheitTemptature);
-
-let c = document.querySelector("#cels-link");
-c.addEventListener("click", showCelsTemprature);
-
-let cels = null;
-
-// displayForecast();
 
 let form = document.querySelector("#search-form");
 
