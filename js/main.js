@@ -115,10 +115,4 @@ let form = document.querySelector("#search-form");
 
 form.addEventListener("submit", handleSubmit);
 
-form.addEventListener("keypress", (e) => {
-      if (e.key === "Enter") {
-            handleSubmit();
-      }
-});
-
 search("Tehran");
