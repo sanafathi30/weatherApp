@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  direction: ltr;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth !important;
+}
+
 body {
   font-family: Google Sans, arial, sans-serif;
 }
