@@ -41,11 +41,11 @@ function displayForecast(response) {
                             <img src="http://openweathermap.org/img/wn/${
                                   forecastday.weather[0].icon
                             }@2x.png" alt="" width="42px">
-                            <div class="weather-forecast-temprature">
-                                <span class="weather-forecast-temprature-maxi">${Math.round(
+                            <div class="weather-forecast-temperature">
+                                <span class="weather-forecast-temperature-maxi">${Math.round(
                                       forecastday.temp.max
                                 )}°</span>
-                                <span class="weather-forecast-temprature-mini"> ${Math.round(
+                                <span class="weather-forecast-temperature-mini"> ${Math.round(
                                       forecastday.temp.min
                                 )}°</span>
                             </div>
@@ -71,7 +71,7 @@ function displayTempruture(response) {
       let cityName = document.querySelector("#city");
       cityName.innerHTML = response.data.name;
 
-      let temp = document.querySelector("#temprature");
+      let temp = document.querySelector("#temperature");
       temp.innerHTML = Math.round(response.data.main.temp);
       let description = document.querySelector("#description");
       description.innerHTML = response.data.weather[0].description;

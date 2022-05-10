@@ -50,32 +50,32 @@ li::first-letter {
   margin-bottom: 20px;
 }
 
-.weather-app-wrapper .weather-app .weather-tempreture img {
+.weather-app-wrapper .weather-app .weather-temperature img {
   margin-right: 5px;
   float: left;
   height: 64px;
   width: 64px;
 }
 
-.weather-app-wrapper .weather-app .weather-tempreture strong {
+.weather-app-wrapper .weather-app .weather-temperature strong {
   color: #202124;
   font-size: 64px;
   font-weight: 400;
   line-height: 1;
 }
 
-.weather-app-wrapper .weather-app .weather-tempreture .units {
+.weather-app-wrapper .weather-app .weather-temperature .units {
   position: relative;
   top: -34px;
   font-size: 16px;
 }
 
-.weather-app-wrapper .weather-app .weather-tempreture .active {
+.weather-app-wrapper .weather-app .weather-temperature .active {
   color: #202124;
   cursor: default;
 }
 
-.weather-app-wrapper .weather-app .weather-tempreture .active:hover {
+.weather-app-wrapper .weather-app .weather-temperature .active:hover {
   text-decoration: none;
 }
 
@@ -90,11 +90,11 @@ li::first-letter {
   opacity: 0.5;
 }
 
-.weather-app-wrapper .weather-app .weather-forecast .weather-forecast-temprature-mini {
+.weather-app-wrapper .weather-app .weather-forecast .weather-forecast-temperature-mini {
   opacity: 0.5;
 }
 
-.weather-app-wrapper .weather-app .weather-forecast .weather-forecast-temprature {
+.weather-app-wrapper .weather-app .weather-forecast .weather-forecast-temperature {
   font-size: 13px;
 }
 /*# sourceMappingURL=style.css.map */
