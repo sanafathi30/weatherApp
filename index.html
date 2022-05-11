@@ -1,83 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link
+                  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+                  rel="stylesheet"
+            />
+            <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+            <link rel="stylesheet" href="./css/style.css" />
+            <title>Weather App</title>
+      </head>
+      <body>
+            <div class="container">
+                  <div class="weather-app-wrapper">
+                        <div class="weather-app">
+                              <form action="" id="search-form" class="mb-3">
+                                    <div class="row">
+                                          <div class="col-9">
+                                                <input
+                                                      type="search"
+                                                      name=""
+                                                      id="city-input"
+                                                      placeholder="type a city..."
+                                                      class="form-control"
+                                                      autocomplete="off"
+                                                />
+                                          </div>
+                                          <div class="col-3">
+                                                <input
+                                                      type="submit"
+                                                      value="search"
+                                                      class="btn btn-primary w-100"
+                                                />
+                                          </div>
+                                    </div>
+                              </form>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                              <div class="overview">
+                                    <h1 id="city"></h1>
+                                    <ul>
+                                          <li>Last updated at <span id="data"></span></li>
+                                          <li id="description"></li>
+                                    </ul>
+                              </div>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="/src/style.css">
-    <title>Document</title>
-</head>
-
-<body>
-    <div class="container">
-        <div class="weather-app-wrapper">
-            <div class="weather-app">
-                <form action="" id="search-form" class="mb-3">
-                    <div class="row">
-                        <div class="col-9">
-                            <input type="search" name="" id="city-input" placeholder="type a city..." class="form-control" autocomplete="off">
+                              <div class="row">
+                                    <div class="col-6">
+                                          <div class="clear-fix weather-temperature">
+                                                <img id="icon" src="" alt="" class="float-left" />
+                                                <div class="float-left">
+                                                      <strong id="temperature"></strong>
+                                                      <span class="units">°C</span>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-6">
+                                          <ul>
+                                                <li id="Humidity"></li>
+                                                <li id="wind"></li>
+                                          </ul>
+                                    </div>
+                              </div>
+                              <!-- Start Forecast -->
+                              <div class="weather-forecast" id="forecast"></div>
+                              <!-- End Forecast -->
                         </div>
-                        <div class="col-3">
-                            <input type="submit" value="search" class="btn btn-primary w-100">
-                        </div>
-                    </div>
-
-
-                </form>
-
-
-
-
-                <div class="overview">
-                    <h1 id="city"></h1>
-                    <ul>
-                        <li>Last updated at <span id="data"></span></li>
-                        <li id="description"></li>
-                    </ul>
-                </div>
-
-                <div class="row">
-                    <div class="col-6">
-                        <div class="clear-fix weather-tempreture">
-                            <img id="icon" src="" alt="" class="float-left">
-                            <div class="float-left">
-                                <strong id="temprature"></strong>
-                                <span class="units">°C</span>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="col-6">
-                        <ul>
-
-                            <li id="Humidity"></li>
-                            <li id="wind"></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- forecast -->
-                <div class="weather-forecast" id="forecast">
-
-
-
-                </div>
-                <!--  -->
+                  </div>
             </div>
-            <small>
-              <a href="https://github.com/sanafathi30/weatherApp" target="_blank">open source code  </a>, by Sana Fathi
-             </small>
-        </div>
-    </div>
 
-
-
-
-    <script src="/js/main.js"></script>
-</body>
-
+            <script src="./js/main.js"></script>
+      </body>
 </html>
